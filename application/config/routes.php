@@ -50,6 +50,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'MainController';
+$route['cari'] = 'MainController/cari';
+$route['clear_notif'] = 'MainController/clearNotif';
+$route['comment'] = 'MainController/comment';
 $route['upload'] = 'MainController/post';
 $route['auth/register'] = 'AuthController/actregister';
 $route['auth/login'] = 'AuthController/actlogin';

@@ -11,12 +11,7 @@
 				</a>
 			</li>
 			<li>
-				<a class="sidebar-link" href="">
-					<i class="fa fa-file-video-o"></i> <span>Video</span>
-				</a>
-			</li>
-			<li>
-				<a class="sidebar-link" href="">
+				<a class="sidebar-link" href="#">
 					<i class="fa fa-gear"></i> <span>Setting</span>
 				</a>
 			</li>
