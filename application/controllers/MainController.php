@@ -110,4 +110,20 @@ class MainController extends CI_Controller {
 		$this->db->delete('notifications');
 		redirect();
 	}
+
+	public function deletePost($slug)
+	{
+		$post = $this->db->get_where('materi', ['slug' => $slug])->row_array();
+		if ($post['slug'] == $slug) {
+			if ($slug !== null) {
+				unlink(base_url('asset/user/video/'.$post['file']));
+				$this->db->delete('materi', ['slug' => $slug]);
+				redirect();
+			} else {
+				show_404();
+			}
+		} else {
+			show_404();
+		}
+	}
 }

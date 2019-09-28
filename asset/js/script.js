@@ -12,13 +12,13 @@ current.addClass('sidebar-link-active');
 
 $('.post-dropdown-btn').on('click', function () {
 	let dropdown = $(this).next();
-	dropdown.toggle();
+	dropdown.slideToggle();
 });
 
 $('.nav-item').on('click', function (e) {
 	e.preventDefault();
 	let target = $(this).next();
-	target.toggle();
+	target.slideToggle();
 });
 
 $('.openComment').on('click', function (e) {

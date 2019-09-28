@@ -25,6 +25,9 @@
 							<div class="post-dropdown-item">
 								<button type="button" data-link="<?php echo base_url(); ?>" id="copyBtn">Salin link</button>
 								<a href="" class="openComment">Tanggapi postingan</a>
+								<?php if ($userProfile['id'] == $this->session->userdata('user_id')) : ?>
+									<a href="<?php echo base_url('delete/'.$key['slug']); ?>">Delete this post</a>
+								<?php endif; ?>
 							</div>
 						</div>
 						<img src="<?php echo base_url('asset/img/default.jpg'); ?>">

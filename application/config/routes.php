@@ -53,6 +53,7 @@ $route['default_controller'] = 'MainController';
 $route['cari'] = 'MainController/cari';
 $route['clear_notif'] = 'MainController/clearNotif';
 $route['comment'] = 'MainController/comment';
+$route['delete/(:any)'] = 'MainController/deletePost/$1';
 $route['upload'] = 'MainController/post';
 $route['auth/register'] = 'AuthController/actregister';
 $route['auth/login'] = 'AuthController/actlogin';

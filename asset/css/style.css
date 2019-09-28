@@ -545,7 +545,8 @@ hr {
 	border-radius: 5px;
 	border: 1px solid rgba(0,0,0,.1);
 	position: absolute;
-	left: -200px;
+	right: 0;
+	min-width: 220px;
 	display: none;
 	z-index: 4;
 }
